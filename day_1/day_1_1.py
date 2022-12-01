@@ -6,7 +6,6 @@ with open("puzzle_input_1_1.txt", "r") as file:
         if row == "\n":
             res.append(val)
             val = 0
-            continue
         else:
             val += int(row)
 
