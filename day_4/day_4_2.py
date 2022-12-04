@@ -1,6 +1,5 @@
 def contains_or_overlaps_range(min_x, max_x, min_y, max_y):
-    return 1 if (min_x <= min_y <= max_y <= max_x or min_y <= min_x <= max_x <= max_y) or (
-            min_x <= min_y <= max_x) or (min_y <= min_x <= max_y) else 0
+    return 1 if (min_x <= min_y <= max_x) or (min_y <= min_x <= max_y) else 0
 
 sum = 0
 
