@@ -2,8 +2,6 @@ rock_other, rock_me = "A", "X"
 paper_other, paper_me = "B", "Y"
 scissors_other, scissors_me = "C", "Z"
 
-
-
 res_other = 0
 res_me = 0
 
@@ -52,6 +50,7 @@ with open("puzzle_input_2_1.txt", "r") as file:
                 res_me += 3
                 res_other += 3
 
+
 class RoundChoices:
     rock, lose = "A", "X"
     paper, draw = "B", "Y"
@@ -74,7 +73,6 @@ with open("puzzle_input_2_1.txt", "r") as file:
                     case RoundChoices.win:
                         res_me += 6
                         res_me += 2
-
 
             case RoundChoices.paper:
                 match round[2]:
@@ -101,7 +99,5 @@ with open("puzzle_input_2_1.txt", "r") as file:
                     case RoundChoices.win:
                         res_me += 6
                         res_me += 1
-
-
 
 print(res_me, res_other)
